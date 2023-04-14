@@ -407,6 +407,71 @@ export default [
         ["12:30 AM" ,"Goes home for the night."]
     ]
     },
+    {
+        id: "harvey-rainy",
+        note: null,
+        schedule: [ ["8:00 AM" , "In his room."],
+        ["8:40 AM" , "Works at the clinic's front desk."],
+        ["12:00 PM" ,"Goes upstairs to his room, sits in front of radio."],
+        ["4:00 PM" ,"Moves to bookshelf to read."], 
+        ["5:30 PM" ,"Heads to The Stardrop Saloon."],
+        ["10:00 PM" ,"Returns home and goes to bed."],
+    ]
+    },
+    {
+        id: "harvey-tt",
+        note: null,
+        schedule: [ ["7:30 AM" , "In exam room of clinic."],
+        ["12:50 PM" , "Moves to waiting room."],
+        ["1:30 PM" ,"Returns to exam room."],
+        ["4:30 PM" ,"Works at the clinic's front desk."], 
+        ["6:00 PM" ,"Goes up to his room, stands in front of bookshelf."],
+        ["11:00 PM" ,"Goes to bed."],
+    ]  
+    },
+    {
+        id: "harvey-friday",
+        note: null,
+        schedule: [ ["7:00 AM" , "Stands in front of refrigerator in his room."],
+        ["8:30 AM" ,"Works at the clinic's front desk."], 
+        ["12:00 PM" ,"Goes to Pierre's General Store."], 
+        ["3:00 PM" ,"Returns to his room above the clinic."],
+        ["10:00 PM" ,"Goes to bed."],
+    ]  
+    },
+    {
+        id: "harvey-saturday",
+        note: null,
+        schedule: [ 
+        ["8:30 AM" ,"Leaves home to go to the Museum."], 
+        ["3:00 PM" ,"Leaves the Museum to return to his room above the clinic."],
+        
+    ]  
+    },
+    {
+        id: "harvey-weekday",
+        note: "Standard Schedule",
+        schedule: [ ["7:00 AM" , "Stands in front of refrigerator in his room."],
+        ["8:30 AM" ,"Works at the clinic's front desk."], 
+        ["12:00 PM" ,"Walks around the park west of the town square."], 
+        ["5:30 PM" ,"Returns to clinic, stands at right side of front desk."],
+        ["6:40 PM" ,"Goes upstairs to his room, reads in front of bookshelf."],
+        ["10:00 PM" ,"Goes to bed."],
+        
+    ]  
+    },
+    {
+        id: "harvey-winter-15",
+        note: "Winter 15",
+        schedule: [ ["8:00 AM" , "Stands in front of microwave in his room."],
+        ["8:40 AM" ,"Works at the clinic's front desk."], 
+        ["12:00 PM" ,"Goes upstairs to his room, sits in front of radio."], 
+        ["4:00 PM" ,"Moves to bookshelf in his room."],
+        ["5:00 PM" ,"Walks to beach to attend Night Market."],
+        ["12:00 AM" ,"Returns home and goes to bed."],
+        
+    ]  
+    },
 
 
 

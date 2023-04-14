@@ -110,7 +110,24 @@ function Schedule(props) {
     else if(props.formData.name === "emily" ){
         dataID = "emily-weekday"
     }
-  
+    else if(props.formData.name === "harvey" && props.formData.isRaining){
+        dataID = "harvey-rainy";
+    }
+    else if(props.formData.name === "harvey" && props.formData.season === "winter" && props.formData.specialDay === "15"){
+        dataID = "harvey-winter-15"
+    }
+    else if(props.formData.name === "harvey" && (props.formData.weekday === "tuesday" || props.formData.weekday === "thursday")){
+        dataID = "harvey-tt";
+    }
+    else if(props.formData.name === "harvey" && props.formData.weekday === "friday"){
+        dataID = "harvey-friday";
+    }
+    else if(props.formData.name === "harvey" && props.formData.weekday === "saturday"){
+        dataID = "harvey-saturday";
+    }
+    else if(props.formData.name === "harvey"){
+        dataID = "harvey-weekday";
+    }
     
 
     const sched = data.filter(item => item.id == dataID);
