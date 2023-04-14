@@ -26,7 +26,46 @@ function Schedule(props) {
     else if(props.formData.name === "alex" && props.formData.season === "winter"  && !props.formData.isRaining){
         dataID = "alex-winter-weekday"
     }
-
+    else if(props.formData.name === "abigail" && props.formData.isRaining ){
+        dataID = "abigail-rainy-1"
+    }
+    else if(props.formData.name === "abigail" && props.formData.season === "spring"  && props.formData.specialDay === "4"){
+        dataID = "abigail-spring-4"
+    }
+    else if(props.formData.name === "abigail" && props.formData.season === "winter"  && props.formData.specialDay === "15"){
+        dataID = "abigail-winter-15"
+    }
+    else if(props.formData.name === "abigail" && (props.formData.specialDay === "6" || props.formData.specialDay == "16")){
+        dataID = "abigail-6-16"
+    }
+    else if(props.formData.name === "abigail" && (props.formData.specialDay === "11" || props.formData.specialDay == "25")){
+        dataID = "abigail-11-25"
+    }
+    else if(props.formData.name === "abigail" && props.formData.season === "spring"  && props.formData.specialDay !== "4" && props.formData.weekday !== "wednesday" && props.formData.weekday !== "friday" && props.formData.weekday !== "sunday"){
+        dataID = "abigail-spring-mtts"
+    }
+    else if(props.formData.name === "abigail" && props.formData.specialDay !== "4" && props.formData.weekday === "wednesday" ){
+        dataID = "abigail-wednesday"
+    }
+    else if(props.formData.name === "abigail" && props.formData.specialDay !== "4" && props.formData.weekday === "friday" ){
+        dataID = "abigail-friday"
+    }
+    else if(props.formData.name === "abigail" && props.formData.specialDay !== "4" && props.formData.weekday === "sunday" ){
+        dataID = "abigail-sunday"
+    }
+    else if(props.formData.name === "abigail" && props.formData.season === "summer"  && props.formData.specialDay !== "4" && props.formData.weekday !== "wednesday" && props.formData.weekday !== "friday" && props.formData.weekday !== "sunday"){
+        dataID = "abigail-summer-mtts"
+    }
+    else if(props.formData.name === "abigail" && props.formData.season === "fall"  && props.formData.specialDay !== "4" && props.formData.weekday === "monday"){
+        dataID = "abigail-fall-monday"
+    }
+    else if(props.formData.name === "abigail" && props.formData.season === "fall"  && props.formData.specialDay !== "4" && (props.formData.weekday === "tuesday" || props.formData.weekday === "thursday" || props.formData.weekday === "saturday")){
+        dataID = "abigail-fall-tts"
+    }
+    else if(props.formData.name === "abigail" && props.formData.season === "winter"  && props.formData.specialDay !== "4" && props.formData.weekday !== "wednesday" && props.formData.weekday !== "friday" && props.formData.weekday !== "sunday"){
+        dataID = "abigail-winter-mtts"
+    }
+  
     
 
     const sched = data.filter(item => item.id == dataID);
@@ -74,8 +113,51 @@ function Schedule(props) {
 
     ) 
     )
-
     }
+
+    if (dataID === "abigail-rainy-1"){
+        // if it's raining, Abigail has a second option
+        sched2 = data.filter(item => item.id == "abigail-rainy-2");
+        
+        scheduleData2 = (sched2[0]["schedule"]);
+        noteElement2 = (<p>{sched2[0]["note"]}</p>)
+        
+        scheduleTable2 = scheduleData2.map(item => (
+            
+            <table>
+            <tbody>
+            <tr>
+                <td key={item[0]}>{item[0]}</td>
+                <td>{item[1]}</td>
+            </tr>
+            </tbody>
+            </table>
+        ) 
+        )
+        }
+
+        if (dataID === "abigail-11-25"){
+            // if it's the 11th or 25th , Abigail has a second option
+            sched2 = data.filter(item => item.id == "abigail-11-25-option2");
+            
+            scheduleData2 = (sched2[0]["schedule"]);
+            noteElement2 = (<p>{sched2[0]["note"]}</p>)
+            
+            scheduleTable2 = scheduleData2.map(item => (
+                
+                <table>
+                <tbody>
+                <tr>
+                    <td key={item[0]}>{item[0]}</td>
+                    <td>{item[1]}</td>
+                </tr>
+                </tbody>
+                </table>
+            ) 
+            )
+            }
+
+
 
 
   return (

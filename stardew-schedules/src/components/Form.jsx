@@ -104,6 +104,26 @@ function Form() {
                 <legend>Special Day of the Month</legend>
                 <input 
                     type="radio"
+                    id="4"
+                    name="specialDay"
+                    value="4"
+                    checked={formData.specialDay === "4"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="4">4th</label>
+                <br />
+                <input 
+                    type="radio"
+                    id="6"
+                    name="specialDay"
+                    value="6"
+                    checked={formData.specialDay === "6"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="6">6th</label>
+                <br />
+                <input 
+                    type="radio"
                     id="11"
                     name="specialDay"
                     value="11"
