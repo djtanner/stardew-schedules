@@ -5,17 +5,27 @@ function Schedule(props) {
 
     let dataID;
 
-    if(props.formData.name == "alex" && props.formData.season == "spring" && props.formData.isRaining){
-        dataID = "alex-spring-rainy";
+    if(props.formData.name === "alex" && props.formData.isRaining){
+        dataID = "alex-rainy";
     }
-    else if(props.formData.name == "alex" && props.formData.season == "spring" && props.formData.weekday === "wednesday"){
-        dataID = "alex-spring-wednesday"
+    else if(props.formData.name == "alex" && props.formData.season=== "summer" && props.formData.specialDay === "16"){
+        dataID = "alex-summer-16"
     }
-    else if(props.formData.name == "alex" && props.formData.season == "spring" && !props.formData.isRaining){
-        dataID = "alex-spring-weekday"
+    else if(props.formData.name == "alex" && props.formData.season=== "winter" && props.formData.specialDay === "17"){
+        dataID = "alex-winter-17"
     }
-
-    console.log(dataID);
+    else if(props.formData.name === "alex" && props.formData.weekday === "wednesday"){
+        dataID = "alex-wednesday"
+    }
+    else if(props.formData.name === "alex" && (props.formData.season === "spring" || props.formData.season === "fall" ) && !props.formData.isRaining){
+        dataID = "alex-spring-fall-weekday"
+    }
+    else if(props.formData.name === "alex" && props.formData.season === "summer" && !props.formData.isRaining){
+        dataID = "alex-summer-weekday"
+    }
+    else if(props.formData.name === "alex" && props.formData.season === "winter"  && !props.formData.isRaining){
+        dataID = "alex-winter-weekday"
+    }
 
     
 
@@ -44,9 +54,9 @@ function Schedule(props) {
     let scheduleTable2;
     let noteElement2;
 
-    if (dataID === "alex-spring-wednesday"){
-    
-    sched2 = data.filter(item => item.id == "alex-spring-weekday");
+    if (dataID === "alex-wednesday"){
+    // if it's wednesday, then you need the second table for standard weekday as well
+    sched2 = data.filter(item => item.id == "alex-spring-fall-weekday");
     
     scheduleData2 = (sched2[0]["schedule"]);
     noteElement2 = (<p>{sched2[0]["note"]}</p>)
@@ -66,7 +76,6 @@ function Schedule(props) {
     )
 
     }
-
 
 
   return (

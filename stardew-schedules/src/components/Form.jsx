@@ -123,6 +123,29 @@ function Form() {
                 />
                 <label htmlFor="15">15th</label>
                 <br />
+                <input 
+                    type="radio"
+                    id="16"
+                    name="specialDay"
+                    value="16"
+                    checked={formData.specialDay === "16"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="16">16th</label>
+                <br />
+                <input 
+                    type="radio"
+                    id="17"
+                    name="specialDay"
+                    value="17"
+                    checked={formData.specialDay === "17"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="17">17th</label>
+                <br />
+
+
+
                 
                 <input 
                     type="radio"
