@@ -65,6 +65,51 @@ function Schedule(props) {
     else if(props.formData.name === "abigail" && props.formData.season === "winter"  && props.formData.specialDay !== "4" && props.formData.weekday !== "wednesday" && props.formData.weekday !== "friday" && props.formData.weekday !== "sunday"){
         dataID = "abigail-winter-mtts"
     }
+    else if(props.formData.name === "elliott" && props.formData.isRaining){
+        dataID = "elliott-rainy";
+    }
+    else if(props.formData.name === "elliott" && props.formData.season === "summer" && props.formData.specialDay === "9"){
+        dataID = "elliott-summer-9";
+    }
+    else if(props.formData.name === "elliott" && (props.formData.weekday === "friday" || props.formData.weekday === "sunday")){
+        dataID = "elliott-fs"
+    }
+    else if(props.formData.name === "elliott" && (props.formData.weekday === "thursday" || props.formData.weekday === "friday")){
+        dataID = "elliott-tf"
+    }
+    else if(props.formData.name === "elliott" && props.formData.season === "spring" && (props.formData.weekday !== "thursday" || props.formData.weekday !== "friday")){
+        dataID = "elliott-weekday-spring"
+    }
+    else if(props.formData.name === "elliott" && props.formData.season === "summer" && (props.formData.weekday !== "thursday" || props.formData.weekday !== "friday")){
+        dataID = "elliott-weekday-summer"
+    }
+    else if(props.formData.name === "elliott" && props.formData.season === "fall" && (props.formData.weekday !== "thursday" || props.formData.weekday !== "friday")){
+        dataID = "elliott-weekday-fall"
+    }
+    else if(props.formData.name === "elliott" && props.formData.season === "winter" && (props.formData.weekday !== "thursday" || props.formData.weekday !== "friday")){
+        dataID = "elliott-weekday-winter"
+    }
+    else if(props.formData.name === "emily" && props.formData.isRaining){
+        dataID = "emily-rainy";
+    }
+    else if(props.formData.name === "emily" && props.formData.season === "winter" && props.formData.specialDay === "11"){
+        dataID = "emily-winter-11"
+    }
+    else if(props.formData.name === "emily" && props.formData.season === "fall" && props.formData.specialDay === "15"){
+        dataID = "emily-fall-15"
+    }
+    else if(props.formData.name === "emily" && props.formData.season === "winter" && props.formData.specialDay === "15"){
+        dataID = "emily-winter-15"
+    }
+    else if(props.formData.name === "emily" && props.formData.weekday === "tuesday" ){
+        dataID = "emily-tuesday"
+    }
+    else if(props.formData.name === "emily" && props.formData.weekday === "friday" && props.formData.communityRestored ){
+        dataID = "emily-friday"
+    }
+    else if(props.formData.name === "emily" ){
+        dataID = "emily-weekday"
+    }
   
     
 
@@ -157,6 +202,26 @@ function Schedule(props) {
             )
             }
 
+            if (props.formData.weekday === "friday" && dataID === "elliott-fs"){
+                // if it's Friday, display a second option
+                sched2 = data.filter(item => item.id == "elliott-tf");
+                
+                scheduleData2 = (sched2[0]["schedule"]);
+                noteElement2 = (<p>{sched2[0]["note"]}</p>)
+                
+                scheduleTable2 = scheduleData2.map(item => (
+                    
+                    <table>
+                    <tbody>
+                    <tr>
+                        <td key={item[0]}>{item[0]}</td>
+                        <td>{item[1]}</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                ) 
+                )
+                }
 
 
 

@@ -11,6 +11,7 @@ function Form() {
             isRaining: false, 
             specialDay: "",
             railroadUnlocked: false,
+            communityRestored: false,
             weekday: ""
         }
     )
@@ -48,7 +49,7 @@ function Form() {
     >
             <option value="abigail">Abigail</option>
             <option value="alex">Alex</option>
-            <option value="elliot">Elliot</option>
+            <option value="elliott">Elliott</option>
             <option value="emily">Emily</option>
             <option value="harvey">Harvey</option>
             <option value="haley">Haley</option>
@@ -124,6 +125,16 @@ function Form() {
                 <br />
                 <input 
                     type="radio"
+                    id="9"
+                    name="specialDay"
+                    value="9"
+                    checked={formData.specialDay === "9"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="9">9th</label>
+                <br />
+                <input 
+                    type="radio"
                     id="11"
                     name="specialDay"
                     value="11"
@@ -189,6 +200,17 @@ function Form() {
                 name="railroadUnlocked"
             />
 <br/>
+
+<label htmlFor="communityRestored">Is the Community Center restored?</label>
+<input 
+                type="checkbox" 
+                id="communityRestored" 
+                checked={formData.communityRestored}
+                onChange={handleChange}
+                name="communityRestored"
+            />
+<br/>
+
 <label htmlFor="weekday">Weekday</label>
     <select
         id="weekday"

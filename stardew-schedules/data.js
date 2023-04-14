@@ -265,6 +265,149 @@ export default [
     ]
     },
 
+    {
+        id: "elliott-rainy",
+        note: null,
+        schedule: [ ["All day" , "Stays inside his house."],
+    
+    ]
+    },
+
+    {
+        id: "elliott-tf",
+        note: "Thursday or Friday - if you have 6+ hearts with Leah",
+        schedule: [ ["8:00 AM" , "At home."],
+        ["11:30 AM" ,"Leaves home and heads to Pierre's General Store."],
+        ["5:30 PM" , "Leaves Pierre's and heads home for the night."],
+    
+    ]
+    },
+    {
+        id: "elliott-fs",
+        note: "Friday and Sunday - if you have less than 6 hearts with Leah",
+        schedule: [ ["8:00 AM" , "At home."],
+        ["11:00 AM" ,"Leaves his cabin to stand on the docks next to Willy's house."],
+        ["5:00 PM" , "Leaves the docks to visit The Stardrop Saloon."],
+        ["11:40 PM" , "Leaves the saloon to return home for the night."],
+    
+    ]
+    },
+    {
+        id: "elliott-weekday-spring",
+        note: "Standard Schedule",
+        schedule: [ ["8:00 AM" , "At home."],
+        ["12:00 PM" ,"Leaves his cabin to stand on the beach south of his house."],
+        ["1:30 PM" , "Leaves the beach and returns to his cabin."],
+        ["3:00 PM" , "Leaves his cabin to stand on the bridge just north of the beach."],
+        ["6:00 PM" , "Leaves the bridge to return home for the night."],
+    
+    ]
+    },
+    {
+        id: "elliott-summer-9",
+        note: "Tuesday, Summer 9",
+        schedule: [ ["10:30 AM" , "Leaves his house and goes to the Clinic."],
+        ["1:30 PM" ,"Moves from waiting room to examination room inside Clinic"],
+        ["4:00 PM" , "Leaves the clinic and returns home for the night"],
+        
+    
+    ]
+    },
+
+    {
+        id: "elliott-weekday-summer",
+        note: "Standard Schedule",
+        schedule: [ ["8:00 AM" , "At home."],
+        ["11:30 AM" ,"Leaves home, heads to the forest south of Leah's Cottage."],
+        ["6:00 PM" , "Leaves the forest to return home for the night."],
+        ["7:40 PM" , "Arrives home and goes to bed."],
+    ]
+    },
+
+    {
+        id: "elliott-weekday-fall",
+        note: "Standard Schedule",
+        schedule: [ ["8:00 AM" , "At home."],
+        ["11:30 AM" ,"Leaves home, heads to the Library."],
+        ["5:30 PM" ,"Leaves the library to return home for the night."],
+        ["6:40 PM" , "Returns home and stands by his bonsai tree."],
+        ["9:00 PM" , "Leaves his bonsai tree and walks over to his writing desk."],
+    ]
+    },
+    {
+        id: "elliott-weekday-winter",
+        note: "Standard Schedule",
+        schedule: [ ["8:00 AM" , "At home."],
+        ["11:30 AM" ,"Leaves home, heads to the Library."],
+        ["5:30 PM" ,"Leaves the library to return home for the night."]
+    ]
+    },
+    {
+        id: "emily-fall-15",
+        note: "Fall 15",
+        schedule: [ ["9:00 AM" , "In her bedroom."],
+        ["10:30 AM" ,"Leaves home for Calico Desert to visit Sandy on her birthday."],
+        ["12:00 AM" ,"Goes home for the night."]
+    ]
+    },
+    {
+        id: "emily-winter-11",
+        note: "Winter 11",
+        schedule: [ ["9:00 AM" , "In her bedroom."],
+        ["10:30 AM" ,"Leaves home for Harvey's Clinic, waits in waiting room."],
+        ["1:30 PM" ,"Moves to exam room."],
+        ["4:00 PM" ,"Leaves clinic to work at The Stardrop Saloon."],   
+        ["12:30 AM" ,"Goes home for the night."]
+    ]
+    },
+    {
+        id: "emily-winter-15",
+        note: "Winter 15",
+        schedule: [ ["9:00 AM" , "In her bedroom."],
+        ["12:00 PM" ,"Leaves bedroom to stand in living room."],
+        ["2:30 PM" ,"Leaves home to attend the Night Market."], 
+        ["12:30 AM" ,"Goes home for the night."]
+    ]
+    },
+
+    {
+        id: "emily-rainy",
+        note: null,
+        schedule: [ ["9:00 AM" , "In her bedroom."],
+        ["12:00 PM" ,"Leaves bedroom to stand in living room."],
+        ["3:30 PM" ,"Leaves home to work at The Stardrop Saloon."], 
+        ["1:00 AM" ,"Goes home for the night."]
+    ]
+    },
+    {
+        id: "emily-tuesday",
+        note: null,
+        schedule: [ ["9:00 AM" , "In her bedroom."],
+        ["10:00 AM" ,"Leaves home to attend aerobics class at Pierre's General Store."],
+        ["1:00 PM" ,"Aerobics class begins."], 
+        ["4:00 PM" ,"Leaves Pierre's to work at The Stardrop Saloon."],
+        ["12:30 AM" ,"Goes home for the night."]
+    ]
+    },
+    {
+        id: "emily-friday",
+        note: "Friday, Community Center is Restored",
+        schedule: [ ["9:00 AM" , "In her bedroom."],
+        ["10:00 AM" ,"Walks to Community Center, stands in Crafts Room."],
+        ["3:30 PM" ,"Leaves the Community Center to work at The Stardrop Saloon."], 
+        ["12:30 AM" ,"Goes home for the night."]
+    ]
+    },
+    {
+        id: "emily-weekday",
+        note: "Standard Schedule",
+        schedule: [ ["9:00 AM" , "In her bedroom."],
+        ["12:00 PM" ,"Leaves bedroom to stand in living room."],
+        ["3:30 PM" ,"Leaves home to work at The Stardrop Saloon."], 
+        ["12:30 AM" ,"Goes home for the night."]
+    ]
+    },
+
 
 
 
