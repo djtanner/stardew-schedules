@@ -306,10 +306,10 @@ function Schedule(props) {
 
 
 
-console.log(dataID);
+    //console.log(dataID);
     const sched = data.filter(item => item.id == dataID);
     
-    console.log(sched);
+    //console.log(sched);
     const scheduleData = (sched[0]["schedule"]);
     const noteElement = (<p>{sched[0]["note"]}</p>)
     
@@ -502,13 +502,13 @@ console.log(dataID);
 
 
   return (
-    <>
+    <div className = "schedule">
     {noteElement}
     <div>{scheduleTable} </div>
     <br/>
     {noteElement2}
     <div>{scheduleTable2} </div>
-    </>
+    </div>
   )
 }
 

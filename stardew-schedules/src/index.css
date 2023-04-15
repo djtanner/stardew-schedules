@@ -29,8 +29,8 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
- /*  background: #0A0523 url("https://stardewvalleywiki.com/mediawiki/extensions/StardewValley/images/stardewbackground.png") no-repeat fixed center center / cover; */
-
+  background: #0A0523 url("https://stardewvalleywiki.com/mediawiki/extensions/StardewValley/images/stardewbackground.png") no-repeat fixed center center / cover;
+  color: white;
 }
 
 h1 {
@@ -67,11 +67,20 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+    margin-bottom: 10px;
   }
 }
 
 form {
-  background: rgba(76, 175, 80, 0.2);
-  padding: 20px;
+  background: rgba(76, 175, 80, 0.9);
+  padding: 20px 20px 0px 20px;
   
 }
+
+.schedule{
+  background: rgba(76, 175, 80, 0.9);
+  padding:  20px;
+  margin-bottom: 10px;
+  
+}
+
