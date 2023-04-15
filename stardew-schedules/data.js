@@ -1048,7 +1048,72 @@ export default [
             ["9:30 PM", "Goes back to his house."]
           ]
           
-        }
+        },
+        {
+            id: "shane-winter-15",
+            note: "If JojaMart is still open, Shane will not attend work on Winter 15.",
+            schedule: [  ["7:00 AM", "At Marnie's Ranch"],
+            ["11:00 AM", "Leaves the kitchen to head to his room."],
+            ["3:00 PM", "Leaves Marnie's Ranch to attend the Night Market."],
+            ["11:00 PM", "Leaves the Night Market to return home."]
+          ] 
+        },
+        {
+            id: "shane-weekday",
+            note: null,
+            schedule: [  ["7:10 AM", "Leaves Marnie's Ranch and heads to JojaMart."],
+            ["5:00 PM", "Leaves JojaMart and heads for the Stardrop Saloon."],
+            ["11:10 PM", "Leaves the Stardrop Saloon and heads back to Marnie's Ranch."]
+          ]
+           
+        },
+        {
+            id: "shane-sat-nocc",
+            note: "Community Center is not restored.",
+            schedule: [  ["9:00 AM", "Standing in kitchen at Marnie's Ranch."],
+            ["12:00 PM", "Leaves Marnie's Ranch and heads for Pierre's General Store."],
+            ["5:00 PM", "Leaves Pierre's General Store and heads to the Stardrop Saloon."],
+            ["11:00 PM", "Leaves the Stardrop Saloon and heads back to Marnie's Ranch."]
+          ]
+          
+        },
+        {
+            id: "shane-sun-nocc",
+            note: "Community Center is not restored.",
+            schedule: [["9:00 AM", "Standing in kitchen at Marnie's Ranch."], ["2:00 AM", "Still standing in kitchen..."]]
+          
+        },
+        {
+            id: "shane-sun-cc",
+            note: "Community Center is restored.",
+            schedule: [  ["1:10 PM", "Standing in his room at Marnie's Ranch."],
+            ["3:10 PM", "Standing in shop room at Marnie's Ranch."],
+            ["7:30 PM", "Standing in Saloon."]
+          ]
+                  
+        },
+        {
+            id: "shane-weekday-cc",
+            note: "Community Center is restored.",
+            schedule: [  ["9:00 AM", "Leaves his room and stands in kitchen at Marnie's Ranch."],
+            ["11:00 AM", "Leaves the kitchen and returns to his room."],
+            ["12:00 PM", "Leaves his room and stands by the fireplace at Marnie's Ranch."],
+            ["2:00 PM", "Leaves Marnie's Ranch and heads to the Stardrop Saloon."],
+            ["11:00 PM", "Leaves the Stardrop Saloon and heads back to Marnie's Ranch."]
+          ]          
+        },
+        {
+            id: "shane-saturday-cc",
+            note: "Community Center is restored.",
+            schedule: [
+                ["9:00 AM", "Leaves his room and stands in kitchen at Marnie's Ranch."],
+                ["12:00 PM", "Leaves Marnie's Ranch and heads to Pierre's General Store."],
+                ["5:00 PM", "Leaves Pierre's General Store and heads to the Stardrop Saloon."],
+                ["11:00 PM", "Leaves the Stardrop Saloon and heads back to Marnie's Ranch."]
+                ]          
+        },
+
+
 
 
 

@@ -276,13 +276,39 @@ function Schedule(props) {
     else if(props.formData.name === "sebastian"){
         dataID = "sebastian-weekday";
     }
+    else if(props.formData.name === "shane" && props.formData.season === "winter"  && props.formData.specialDay === "15"){
+        dataID = "shane-winter-15";
+    }
+   
+    else if(props.formData.name === "shane" && props.formData.isRaining){
+        dataID = "shane-weekday";
+    }
+    else if(props.formData.name === "shane" && props.formData.weekday === "saturday" && !props.formData.communityRestored ){
+        dataID = "shane-sat-nocc";
+    }
+    else if(props.formData.name === "shane" && props.formData.weekday === "sunday" && !props.formData.communityRestored){
+        dataID = "shane-sun-nocc";
+    }
+    else if(props.formData.name === "shane" && props.formData.weekday === "sunday" && props.formData.communityRestored){
+        dataID = "shane-sun-cc";
+    }
+
+    else if(props.formData.name === "shane" && props.formData.communityRestored  && props.formData.weekday !== "sunday" && props.formData.weekday !== "saturday"){
+        dataID = "shane-weekday-cc";
+    }
+    else if(props.formData.name === "shane" && props.formData.communityRestored  && props.formData.weekday !== "sunday" && props.formData.weekday === "saturday"){
+        dataID = "shane-weekday-cc";
+    }
+
+    else {
+        dataID = "shane-weekday";
+    }
 
 
 
-
-
+console.log(dataID);
     const sched = data.filter(item => item.id == dataID);
-    console.log(dataID);
+    
     console.log(sched);
     const scheduleData = (sched[0]["schedule"]);
     const noteElement = (<p>{sched[0]["note"]}</p>)
