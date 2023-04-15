@@ -72,13 +72,13 @@ button:focus-visible {
 }
 
 form {
-  background: rgba(76, 175, 80, 0.9);
+  background: rgb(60, 72, 107,0.9);
   padding: 20px 20px 0px 20px;
   
 }
 
 .schedule{
-  background: rgba(76, 175, 80, 0.9);
+  background: rgb(60, 72, 107,0.9);
   padding:  20px;
   margin-bottom: 10px;
   
