@@ -204,13 +204,52 @@ function Schedule(props) {
     else if(props.formData.name === "maru" && props.formData.season === "summer" && (props.formData.weekday === "wednesday" || props.formData.weekday === "friday" || props.formData.weekday === "saturday" )){
         dataID = "maru-summer-wfs";
     }
-    else if(props.formData.name === "leah" && props.formData.season === "winter" && props.formData.specialDay === "16"){
-        dataID = "leah-maru-16";
+    else if(props.formData.name === "maru" && props.formData.season === "winter" && props.formData.specialDay === "16"){
+        dataID = "maru-winter-16";
     }
     else if(props.formData.name === "maru" && props.formData.season === "winter" && props.formData.weekday === "sunday"){
         dataID = "maru-winter-sunday";
     }
-
+    else if(props.formData.name === "penny" && props.formData.isRaining){
+        dataID = "penny-rainy-A";
+    }
+    else if(props.formData.name === "penny" && props.formData.season === "winter" && props.formData.specialDay === "4"){
+        dataID = "penny-winter-4";
+    }
+    else if(props.formData.name === "penny" && props.formData.season === "winter" && props.formData.specialDay === "15"){
+        dataID = "penny-winter-15";
+    }
+    else if(props.formData.name === "penny"  && (props.formData.specialDay === "9" || props.formData.specialDay === "23")){
+        dataID = "penny-9-23-lessSam";
+    }
+    else if(props.formData.name === "penny" && (props.formData.season === "spring" || props.formData.season === "fall" ) && (props.formData.weekday === "monday" || props.formData.weekday === "thursday" || props.formData.weekday === "sunday" )){
+        dataID = "penny-spring-fall-mts";
+    }
+    else if(props.formData.name === "penny" && props.formData.season !== "spring" && (props.formData.weekday === "tuesday" || props.formData.weekday === "wednesday" || props.formData.weekday === "friday" )){
+        dataID = "penny-twf";
+    }
+    else if(props.formData.name === "penny" && props.formData.season === "spring"  && (props.formData.weekday === "tuesday" || props.formData.weekday === "wednesday" || props.formData.weekday === "friday" )){
+        dataID = "penny-spring-twf";
+    }
+    else if(props.formData.name === "penny" && props.formData.season === "spring" && props.formData.weekday === "saturday"){
+        dataID = "penny-spring-saturday";
+    }
+    else if(props.formData.name === "penny" && props.formData.season === "summer" && props.formData.weekday === "sunday"){
+        dataID = "penny-summer-sunday";
+    }
+    else if(props.formData.name === "penny" && props.formData.season === "summer" && (props.formData.weekday === "monday" || props.formData.weekday === "thursday" )){
+        dataID = "penny-summer-mt";
+    }
+    else if(props.formData.name === "penny" && props.formData.season === "fall" && props.formData.weekday === "saturday"){
+        dataID = "penny-fall-saturday";
+    }
+    else if(props.formData.name === "penny" && props.formData.season === "winter" && props.formData.communityRestored && (props.formData.weekday === "sunday" || props.formData.weekday === "monday" || props.formData.weekday === "thursday")){
+        dataID = "penny-winter-stm-cc";
+    }
+    else if(props.formData.name === "penny" && props.formData.season === "winter" && !props.formData.communityRestored && (props.formData.weekday === "sunday" || props.formData.weekday === "monday" || props.formData.weekday === "thursday")){
+        dataID = "penny-winter-stm-nocc";
+    }
+   
 
 
 
@@ -325,6 +364,47 @@ function Schedule(props) {
                 ) 
                 )
                 }
+
+                if (dataID === "penny-rainy-A"){
+                    // if it's raining, Penny has a second option
+                    sched2 = data.filter(item => item.id == "penny-rainy-B");
+                    
+                    scheduleData2 = (sched2[0]["schedule"]);
+                    noteElement2 = (<p>{sched2[0]["note"]}</p>)
+                    
+                    scheduleTable2 = scheduleData2.map(item => (
+                        
+                        <table>
+                        <tbody>
+                        <tr>
+                            <td key={item[0]}>{item[0]}</td>
+                            <td>{item[1]}</td>
+                        </tr>
+                        </tbody>
+                        </table>
+                    ) 
+                    )
+                    }
+                    if (dataID === "penny-9-23-lessSam"){
+                        // if it's 9 or 16, penny has a second option
+                        sched2 = data.filter(item => item.id == "penny-9-23-withSam");
+                        
+                        scheduleData2 = (sched2[0]["schedule"]);
+                        noteElement2 = (<p>{sched2[0]["note"]}</p>)
+                        
+                        scheduleTable2 = scheduleData2.map(item => (
+                            
+                            <table>
+                            <tbody>
+                            <tr>
+                                <td key={item[0]}>{item[0]}</td>
+                                <td>{item[1]}</td>
+                            </tr>
+                            </tbody>
+                            </table>
+                        ) 
+                        )
+                        }
 
 
 

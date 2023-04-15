@@ -54,6 +54,9 @@ function Form() {
             <option value="haley">Haley</option>
             <option value="leah">Leah</option>
             <option value="maru">Maru</option>
+            <option value="penny">Penny</option>
+            <option value="sebastian">Sebastian</option>
+            <option value="shane">Shane</option>
     </select>
     <br />
     <label htmlFor="season">Season</label>
@@ -152,11 +155,19 @@ function Form() {
                     onChange={handleChange}
                 />
                 <label htmlFor="17">17th</label>
+               
+                <br />
+                <input 
+                    type="radio"
+                    id="23"
+                    name="specialDay"
+                    value="23"
+                    checked={formData.specialDay === "23"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="23">23rd</label>
                 <br />
 
-
-
-                
                 <input 
                     type="radio"
                     id="25"

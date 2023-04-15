@@ -762,7 +762,169 @@ export default [
           ]
           
         },
+        {
+            id: "penny-rainy-A",
+            note: "Rainy Day Option 1",
+            schedule: [  ["9:00 AM", "Trailer is unlocked. Penny is in her bedroom."],
+            ["11:00 AM", "Moves to the kitchen."],
+            ["1:00 PM", "Does some dishes."],
+            ["3:00 PM", "Sits on the couch, probably watching TV."],
+            ["6:00 PM", "Returns to her bedroom, reading by the bookshelf."],
+            ["9:00 PM", "Goes to bed for the evening."]
+          ] 
+        },
+
+        {
+            id: "penny-rainy-B",
+            note: "Rainy Day Option 2",
+            schedule: [  ["8:20 AM", "Leaves the trailer and walks to the Museum to sit outside."],
+            ["12:00 PM", "Goes inside the Museum to look at the bookshelves."],
+            ["4:00 PM", "Leaves the Museum and returns to the trailer to watch some television."],
+            ["7:00 PM", "Moves over to the sink in the trailer to do some dishes."],
+            ["9:00 PM", "Goes to bed for the evening."]
+          ] 
+        },
+        {
+            id: "penny-9-23-lessSam",
+            note: "With less than 6 hearts with Sam",
+            schedule: [  ["8:20 AM", "Wakes up and walks around her trailer."],
+            ["11:00 AM", "Walks from the trailer out to town and sits."],
+            ["4:00 PM", "Returns from town to the trailer and does some dishes."],
+            ["6:30 PM", "Goes to bed in her room in the trailer for the evening."], 
+          ] 
+        },
+        {
+            id: "penny-9-23-withSam",
+            note: "With at least 6 hearts with Sam",
+            schedule: [  ["8:10 AM", "Leaves her trailer and goes outside to read near the town graveyard."],
+            ["12:30 AM", "Returns to the trailer to wash dishes."],
+            ["4:00 PM", "Leaves the trailer again to go outside the saloon where she sits on a bench with Maru."],
+            ["6:40 PM", "Returns to her trailer for the evening."], 
+          ] 
+        },
+        {
+            id: "penny-spring-fall-mts",
+            note: null,
+            schedule: [  ["8:10 AM", "Leaves her trailer and goes outside to read near the town graveyard."],
+            ["12:30 AM", "Returns to the trailer to wash dishes."],
+            ["4:00 PM", "Leaves the trailer again to go outside The Stardrop Saloon where she sits on a bench, with Maru on Sundays and Mondays, alone on Thursdays."],
+            ["6:40 PM", "Returns to her trailer for the evening."], 
+          ] 
+        },
+        {
+            id: "penny-twf",
+            note: null,
+            schedule: [  ["9:00 AM", "Leaves the trailer and walks to the Museum."],
+            ["10:00 AM", "In the Museum."],
+            ["2:00 PM", "Pelican Town, outside of the Museum near bridge."],
+            ["4:00 PM", "Outside 2 Willow Lane, walking Vincent and Jas home."],
+            ["6:30 PM", "Leaves Marnie's Ranch and returns to home for the evening."],
+            ["8:00 PM", "Arrives at the trailer for the evening."]
+          ]
+          
+        },
+        {
+            id: "penny-spring-twf",
+            note: null,
+            schedule: [
+                ["9:00 AM", "Leaves her trailer and goes to the museum/library. Jas and Vincent join her there."],
+                ["2:00 PM", "Leaves the library and stands near the Ice Cream Stand watching over Jas and Vincent."],
+                ["4:20 PM", "Continues to Vincent's house and says goodbye."],
+                ["5:50 PM", "Walks Jas the rest of the way home and says goodbye."],
+                ["6:30 PM", "Returns to her trailer for the evening."]
+                ]
+          
+        },
+        {
+            id: "penny-spring-saturday",
+            note: null,
+            schedule: [
+                ["9:00 AM", "In her room."],
+                ["10:00 AM", "Leaves her trailer to meet up with Jas and Vincent near the town graveyard."],
+                ["12:00 PM", "Walks Jas and Vincent to the playground north of the plaza and watches them play."],
+                ["5:00 PM", "Walks Jas and Vincent back to town and drops them off in front of Emily and Haley's house."],
+                ["6:30 PM", "Returns to her trailer for the evening."]
+                ]
         
+        },
+        {
+            id: "penny-summer-sunday",
+            note: null,
+            schedule: [
+                ["8:00 AM", "Leaves her trailer and walks to the river above JojaMart."],
+                ["1:00 PM", "Goes to the garden beside the Community Center and sits inside."],
+                ["6:00 PM", "Leaves Community Center Garden and returns to the trailer to do dishes."],
+                ["9:00 PM", "Goes to bed in her room in the trailer for the evening."]
+                ]
+        
+        },
+        {
+            id: "penny-summer-mt",
+            note: null,
+            schedule: [["8:00 AM", "Wakes up and walks through town to stand by the river behind JojaMart."],
+            ["9:30 AM", "Watching the river behind JojaMart."],
+            ["1:00 PM", "Walks back through town and to the community center."],
+            ["2:30 PM", "Sitting on a bench to the right of the community center."],
+            ["6:00 PM", "Leaves town and returns to the trailer."],
+            ["7:00 PM", "Arrives at the trailer for the evening."]]
+        
+        },
+        {
+            id: "penny-fall-saturday",
+            note: null,
+            schedule: [
+                ["10:00 AM", "Leaves the trailer to meet Jas and Vincent at the tree west of the graveyard"],
+                ["12:00 PM", "All three leave for the playground."],
+                ["1:00 PM", "At the playground with Jas and Vincent."],
+                ["5:00 PM", "Leaves the playground and walks to Emily's house with Jas and Vincent."],
+                ["6:20 PM", "Arrives outside Emily's house."],
+                ["8:00 PM", "Jas and Vincent head for home, while Penny goes home to the trailer."],
+                ["8:40 PM", "Arrives at the trailer and goes to bed."]
+                ]
+        },
+        {
+            id: "penny-winter-4",
+            note: "Winter 4",
+            schedule: [["9:00 AM", "Wakes up and moves around her trailer."],
+            ["11:30 AM", "Walks from her trailer to Harvey's Clinic for her annual checkup."],
+            ["1:30 PM", "Continues getting checkup at clinic."],
+            ["4:00 PM", "Leaves clinic and goes to sit by the bridge west from JojaMart."],
+            ["7:00 PM", "Leaves town and returns to the trailer to do dishes."],
+            ["9:00 PM", "Goes to bed in her room in the trailer for the evening."]]
+        
+        },
+        {
+            id: "penny-winter-15",
+            note: "Winter 15",
+            schedule: [  ["9:00 AM", "Trailer is unlocked. Penny is in her bedroom."],
+            ["11:00 AM", "Moves to the kitchen."],
+            ["1:00 PM", "Does some dishes."],
+            ["3:00 PM", "Sits on the couch, probably watching TV."],
+            ["4:00 PM", "Attends the Night Market."],
+            ["11:50 PM", "Goes to bed for the evening."]
+          ]        
+        },
+        {
+            id: "penny-winter-stm-cc",
+            note: "Community Center is restored.",
+            schedule:   [  ["9:00 AM", "Wakes up and moves around her trailer."],
+            ["10:30 AM", "Leaves her trailer and walks to the community center to read."],
+            ["3:00 PM", "Continues moving around the community center."],
+            ["6:00 PM", "Leaves the community center and returns to the trailer to do dishes."],
+            ["9:00 PM", "Goes to bed in her room in the trailer for the evening."]
+          ]
+               
+        },
+        {
+            id: "penny-winter-stm-nocc",
+            note: "Community Center is not yet restored.",
+            schedule:   [  ["9:00 AM", "Wakes up and moves around her trailer."],
+            ["10:30 AM", "Leaves her trailer and walks to the tree west of the graveyard to read."],
+            ["6:00 PM", "Leaves the Museum and returns to the trailer to do dishes."],
+            ["9:00 PM", "Goes to bed in her room in the trailer for the evening."]
+          ]
+               
+        },
       
 
 
