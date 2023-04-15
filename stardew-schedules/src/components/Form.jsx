@@ -53,6 +53,7 @@ function Form() {
             <option value="harvey">Harvey</option>
             <option value="haley">Haley</option>
             <option value="leah">Leah</option>
+            <option value="maru">Maru</option>
     </select>
     <br />
     <label htmlFor="season">Season</label>
@@ -208,7 +209,7 @@ function Form() {
     </select>
     <br />
             <br />
-            <button>Submit</button>
+            {!showSchedule && <button>Submit</button>}
 
     </form>
 

@@ -183,6 +183,33 @@ function Schedule(props) {
     else if(props.formData.name === "leah" ){
         dataID = "leah-rainy-weekday";
     }
+    else if(props.formData.name === "maru" && props.formData.isRaining){
+        dataID = "maru-rainy";
+    }
+    else if(props.formData.name === "maru" && props.formData.communityRestored && (props.formData.weekday === "wednesday" || props.formData.weekday === "friday" )){
+        dataID = "maru-winter-wf-cc";
+    }
+    else if(props.formData.name === "maru" && props.formData.communityRestored && (props.formData.weekday === "saturday" && props.formData.season === "winter" )){
+        dataID = "maru-winter-sat-cc";
+    }
+    else if(props.formData.name === "maru" && (props.formData.weekday === "monday" || props.formData.weekday === "sunday")){
+        dataID = "maru-ms";
+    }
+    else if(props.formData.name === "maru" && props.formData.weekday === "tuesday" || props.formData.weekday === "thursday"  ){
+        dataID = "maru-tt";
+    }
+    else if(props.formData.name === "maru" && props.formData.season !== "summer" && (props.formData.weekday === "wednesday" || props.formData.weekday === "friday" || props.formData.weekday === "saturday" )){
+        dataID = "maru-wfs";
+    }
+    else if(props.formData.name === "maru" && props.formData.season === "summer" && (props.formData.weekday === "wednesday" || props.formData.weekday === "friday" || props.formData.weekday === "saturday" )){
+        dataID = "maru-summer-wfs";
+    }
+    else if(props.formData.name === "leah" && props.formData.season === "winter" && props.formData.specialDay === "16"){
+        dataID = "leah-maru-16";
+    }
+    else if(props.formData.name === "maru" && props.formData.season === "winter" && props.formData.weekday === "sunday"){
+        dataID = "maru-winter-sunday";
+    }
 
 
 

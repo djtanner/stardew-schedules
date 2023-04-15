@@ -669,6 +669,102 @@ export default [
             
         ]
         },
+        {
+            id: "maru-rainy",
+            note: null,
+            schedule: [ ["9:00 AM" , "Bedroom."],
+            ["12:50 PM" , "Stands in Entryway/Store (Home)."], 
+            ["2:40 PM" ,"Lab."],
+            ["4:40 PM" ,"Bedroom."], 
+            ["11:00 PM" , "Goes to bed."], 
+            
+        ]
+        },
+        {
+            id: "maru-ms",
+            note: null,
+            schedule: [  ["9:00 AM", "Bedroom"],
+            ["10:20 AM", "Lab"],
+            ["1:30 PM", "Heading to bench south of the Saloon."],
+            ["3:20 PM", "Sitting on bench south of the Saloon."],
+            ["6:30 PM", "Heading home."],
+            ["8:30 PM", "Bedroom."],
+            ["11:00 PM", "Goes to bed."]
+          ]
+        },
+        {
+            id: "maru-tt",
+            note: null,
+            schedule: [  ["8:00 AM", "Leaves home and heads to Harvey's."],
+            ["9:20 AM", "Working at Harvey's clinic as a nurse."],
+            ["4:45 PM", "Leaves Harvey's and heads home."],
+            ["6:30 PM", "Kitchen (House)."],
+            ["10:20 PM", "Bedroom."],
+            ["12:00 AM", "Goes to bed."]
+          ]
+        },
+        {
+            id: "maru-wfs",
+            note: null,
+            schedule: [  ["9:00 AM", "Bedroom."],
+            ["10:20 AM", "Lab."],
+            ["2:00 PM", "Heads to bench east of the Community Center."],
+            ["3:00 PM", "Sitting on bench east of the Community Center."],
+            ["6:00 PM", "Heads home."],
+            ["7:00 PM", "Bedroom"],
+            ["10:00 PM", "Goes to bed."]
+          ]
+        },
+        {
+            id: "maru-summer-wfs",
+            note: null,
+            schedule: [  ["9:00 AM", "In her room."],
+            ["10:20 AM", "In the laboratory."],
+            ["2:00 PM", "Leaving house to go to stand by lake, east of house."],
+            ["2:40 PM", "Standing by lake, east of house."],
+            ["7:00 PM", "Heads home."],
+            ["7:40 PM", "Outside house, looking through telescope."],
+            ["12:00 AM", "Heads inside and goes to bed."]
+          ]
+          
+        },
+
+        {
+            id: "maru-winter-16",
+            note: "Winter 16",
+            schedule: [  ["9:00 AM", "Leaves her room."],
+            ["9:20 AM", "In laboratory at home."],
+            ["11:00 AM", "Goes to her room."],
+            ["3:40 PM", "Leaves home to attend Night Market."],
+            ["11:30 PM", "Leaves Night Market to return home."]
+          ] 
+        },
+
+        {
+            id: "maru-winter-wf-cc",
+            note: "Community Center Restored",
+            schedule: [  ["9:00 AM", "In her room."],
+            ["10:20 AM", "Goes to the lab in her house."],
+            ["2:40 PM", "Leaves house to visit the Community Center Crafts Room."],
+            ["6:00 PM", "Heads home."],
+            ["6:40 PM", "At home, in the kitchen."],
+            ["10:00 PM", "Goes to her room."],
+            ["12:00 AM", "Goes to bed."]
+          ] 
+        },
+        {
+            id: "maru-winter-sunday",
+            note: null,
+            schedule: [  ["2:00 PM", "Leaves home."],
+            ["3:30 PM", "Sits down on bench north of graveyard."],
+            ["6:30 PM", "Gets up from bench and walks home."],
+            ["8:10 PM", "Back in her house."]
+          ]
+          
+        },
+        
+      
+
 
 
 
