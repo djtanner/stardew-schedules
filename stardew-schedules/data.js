@@ -925,7 +925,130 @@ export default [
           ]
                
         },
+        {
+            id: "sebastian-11-optionA",
+            note: "Less than 6 hearts with Sebastian",
+            schedule:   [  ["9:00 AM", "In his bed."],
+            ["10:00 AM", "Gets out of bed and moves to his computer."],
+            ["12:00 PM", "In his room, standing by couch."],
+            ["5:30 PM", "Leaving his room to go to the kitchen."],
+            ["6:30 PM", "On his computer."],
+            ["9:30 PM", "Goes to bed."]
+          ]     
+        },
+        {
+            id: "sebastian-11-25-optionB",
+            note: "6+ hearts with Sebastian",
+            schedule:   [  ["9:00 AM", "In his bed."],
+            ["10:30 AM", "Gets out of bed and moves to his computer."],
+            ["3:00 PM", "Leaves his computer and goes to the kitchen."],
+            ["3:30 PM", "Leaves the kitchen to go back to his room."],
+            ["4:10 PM", "On his computer."],
+            ["6:30 PM", "Leaves home and walks to lake next to his house to smoke."],
+            ["7:30 PM", "Smoking by the lake next to his house."],
+            ["9:30 PM", "Goes back to his house."]
+          ]
+              
+        },
+        {
+            id: "sebastian-15",
+            note: "Any hearts with Sebastian",
+            schedule:   [  ["9:00 AM", "In his bed."],
+            ["10:00 AM", "Gets out of bed and moves to his computer."],
+            ["12:00 PM", "In his room, standing by couch."],
+            ["5:30 PM", "Leaving his room to go to the kitchen."],
+            ["6:30 PM", "On his computer."],
+            ["9:30 PM", "Goes to bed."]
+          ]     
+        },
+        {
+            id: "sebastian-winter-16",
+            note: "Winter 16",
+            schedule: [  ['10:30 AM', 'Wakes up and goes to his computer'],
+            ['3:00 PM', 'Leaves room and goes to kitchen'],
+            ['3:40 PM', 'Goes back to room and returns to his computer'],
+            ['5:00 PM', 'Leaves his home to attend Night Market'],
+            ['11:30 PM', 'Leaves Night Market to return home']
+          ]
+               
+        },
+        {
+            id: "sebastian-rainy-A",
+            note: "Rainy Day Option 1",
+            schedule: [  ["9:00 AM", "In his bed."],
+            ["10:30 AM", "Gets out of bed and leaves house to go to the beach."],
+            ["1:30 PM", "Standing at the end of long pier to the left of the fish shop."],
+            ["5:00 PM", "Leaves the pier to go home."],
+            ["7:40 PM", "Arrives home and goes to bed."]
+          ]
+          
+        },
+
+        {
+            id: "sebastian-rainy-B",
+            note: "Rainy Day Option 2",
+            schedule: [  ["9:00 AM", "In his bed."],
+            ["10:30 AM", "Gets out of bed and moves to his computer."],
+            ["3:00 PM", "Leaving house to go to the Saloon."],
+            ["5:20 PM", "At the Saloon, standing by red sofa in arcade."],
+            ["9:10 PM", "Heads home."],
+            ["11:10 PM", "Arrives home."]
+          ]
+          
+        },
+        {
+            id: "sebastian-thurs-rr",
+            note: "Railroad is unlocked.",
+            schedule: [  ["9:00 AM", "In his bed."],
+            ["10:30 AM", "Gets out of bed and moves to his computer."],
+            ["2:00 PM", "Leaving home to go smoke by train station."],
+            ["3:00 PM", "Smoking by the train station."],
+            ["6:20 PM", "Standing east of train station, by tunnel."],
+            ["8:10 PM", "Standing west of train station, by tunnel."],
+            ["9:30 PM", "Heads home."],
+            ["10:20 PM", "Arrives home."]
+          ]
       
+        },
+        {
+            id: "sebastian-friday",
+            note: null,
+            schedule: [  ["9:00 AM", "In his bed."],
+            ["10:30 AM", "Gets out of bed and moves to his computer."],
+            ["3:00 PM", "Leaves his room to go play pool with Sam at the Saloon."],
+            ["5:20 PM", "In the Saloon, playing pool with Sam."],
+            ["9:10 PM", "Heads home."],
+            ["11:10 PM", "Arrives home."]
+          ]
+        },
+        {
+            id: "sebastian-saturday",
+            note: null,
+            schedule: [
+                ["9:00 AM", "Leaves house to go to Sam's house."],
+                ["11:30 AM", "In front of Haley and Emily's house with Sam."],
+                ["12:30 PM", "Follows Sam to his room."],
+                ["1:00 PM", "In Sam's room."],
+                ["6:00 PM", "Leaves Sam's house with Sam and goes to the river."],
+                ["6:20 PM", "Smoking by the river outside Sam's house with him."],
+                ["7:30 PM", "Going home from in front of Sam's house."],
+                ["9:40 PM", "Arrives home."]
+                ]
+        },
+        {
+            id: "sebastian-weekday",
+            note: null,
+            schedule: [  ["9:00 AM", "In his bed."],
+            ["10:30 AM", "Gets out of bed and moves to his computer."],
+            ["3:00 PM", "Leaves his computer and goes to the kitchen."],
+            ["3:30 PM", "Leaves the kitchen to go back to his room."],
+            ["4:10 PM", "On his computer."],
+            ["6:30 PM", "Leaves home and walks to lake next to his house to smoke."],
+            ["7:30 PM", "Smoking by the lake next to his house."],
+            ["9:30 PM", "Goes back to his house."]
+          ]
+          
+        }
 
 
 

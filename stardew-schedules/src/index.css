@@ -29,6 +29,8 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+ /*  background: #0A0523 url("https://stardewvalleywiki.com/mediawiki/extensions/StardewValley/images/stardewbackground.png") no-repeat fixed center center / cover; */
+
 }
 
 h1 {
@@ -66,4 +68,10 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+form {
+  background: rgba(76, 175, 80, 0.2);
+  padding: 20px;
+  
 }

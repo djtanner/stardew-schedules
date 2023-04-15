@@ -195,9 +195,9 @@ function Schedule(props) {
     else if(props.formData.name === "maru" && (props.formData.weekday === "monday" || props.formData.weekday === "sunday")){
         dataID = "maru-ms";
     }
-    else if(props.formData.name === "maru" && props.formData.weekday === "tuesday" || props.formData.weekday === "thursday"  ){
+    else if(props.formData.name === "maru" && (props.formData.weekday === "tuesday" || props.formData.weekday === "thursday")){
         dataID = "maru-tt";
-    }
+    } 
     else if(props.formData.name === "maru" && props.formData.season !== "summer" && (props.formData.weekday === "wednesday" || props.formData.weekday === "friday" || props.formData.weekday === "saturday" )){
         dataID = "maru-wfs";
     }
@@ -249,13 +249,40 @@ function Schedule(props) {
     else if(props.formData.name === "penny" && props.formData.season === "winter" && !props.formData.communityRestored && (props.formData.weekday === "sunday" || props.formData.weekday === "monday" || props.formData.weekday === "thursday")){
         dataID = "penny-winter-stm-nocc";
     }
-   
+    else if(props.formData.name === "sebastian"  && props.formData.specialDay === "11"){
+        dataID = "sebastian-11-optionA";
+    }
+    else if(props.formData.name === "sebastian"  && props.formData.specialDay === "15"){
+        dataID = "sebastian-15";
+    }
+    else if(props.formData.name === "sebastian"  && props.formData.specialDay === "25"){
+        dataID = "sebastian-11-25-optionB";
+    }
+    else if(props.formData.name === "sebastian" && props.formData.season === "winter"  && props.formData.specialDay === "16"){
+        dataID = "sebastian-winter-16";
+    }
+    else if(props.formData.name === "sebastian"  && props.formData.isRaining){
+        dataID = "sebastian-rainy-A";
+    }
+    else if(props.formData.name === "sebastian"  && props.formData.railroadUnlocked && props.formData.weekday === "thursday" ){
+        dataID = "sebastian-thurs-rr";
+    }
+    else if(props.formData.name === "sebastian"  && props.formData.weekday === "friday" ){
+        dataID = "sebastian-friday";
+    }
+    else if(props.formData.name === "sebastian"  && props.formData.weekday === "saturday" ){
+        dataID = "sebastian-saturday";
+    }
+    else if(props.formData.name === "sebastian"){
+        dataID = "sebastian-weekday";
+    }
 
 
 
 
 
     const sched = data.filter(item => item.id == dataID);
+    console.log(dataID);
     console.log(sched);
     const scheduleData = (sched[0]["schedule"]);
     const noteElement = (<p>{sched[0]["note"]}</p>)
@@ -344,6 +371,27 @@ function Schedule(props) {
             )
             }
 
+            if (dataID === "sebastian-11-optionA"){
+                // if it's the 11th  , Sebastian has a second option
+                sched2 = data.filter(item => item.id == "sebastian-11-25-optionB");
+                
+                scheduleData2 = (sched2[0]["schedule"]);
+                noteElement2 = (<p>{sched2[0]["note"]}</p>)
+                
+                scheduleTable2 = scheduleData2.map(item => (
+                    
+                    <table>
+                    <tbody>
+                    <tr>
+                        <td key={item[0]}>{item[0]}</td>
+                        <td>{item[1]}</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                ) 
+                )
+                }
+
             if (props.formData.weekday === "friday" && dataID === "elliott-fs"){
                 // if it's Friday, display a second option
                 sched2 = data.filter(item => item.id == "elliott-tf");
@@ -405,7 +453,26 @@ function Schedule(props) {
                         ) 
                         )
                         }
-
+                        if (dataID === "sebastian-rainy-A"){
+                            // if it's raining, has a second option
+                            sched2 = data.filter(item => item.id == "sebastian-rainy-B");
+                            
+                            scheduleData2 = (sched2[0]["schedule"]);
+                            noteElement2 = (<p>{sched2[0]["note"]}</p>)
+                            
+                            scheduleTable2 = scheduleData2.map(item => (
+                                
+                                <table>
+                                <tbody>
+                                <tr>
+                                    <td key={item[0]}>{item[0]}</td>
+                                    <td>{item[1]}</td>
+                                </tr>
+                                </tbody>
+                                </table>
+                            ) 
+                            )
+                            }
 
 
   return (
