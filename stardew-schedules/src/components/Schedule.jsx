@@ -128,7 +128,51 @@ function Schedule(props) {
     else if(props.formData.name === "harvey"){
         dataID = "harvey-weekday";
     }
+    else if(props.formData.name === "haley" && props.formData.isRaining){
+        dataID = "haley-rainy";
+    }
+    else if(props.formData.name === "haley" && props.formData.season === "winter" && props.formData.specialDay === "9"){
+        dataID = "haley-winter-9"
+    }
+    else if(props.formData.name === "haley" && props.formData.season === "winter" && props.formData.specialDay === "16"){
+        dataID = "haley-winter-16"
+    }
+    else if(props.formData.name === "haley" && props.formData.weekday === "monday" && (props.formData.season === "spring" || props.formData.season === "fall")){
+        dataID = "haley-spring-fall-monday";
+    }
+    else if(props.formData.name === "haley" && props.formData.season === "spring" && (props.formData.weekday === "tuesday" || props.formData.weekday === "thursday" || props.formData.weekday === "friday" || props.formData.weekday === "saturday" || props.formData.weekday === "sunday")){
+        dataID = "haley-spring-ttfss";
+    }
+    else if(props.formData.name === "haley" && props.formData.weekday === "wednesday" && props.formData.season === "spring"){
+        dataID = "haley-spring-wednesday";
+    }
     
+    else if(props.formData.name === "haley" && props.formData.weekday !== "wednesday" && props.formData.season === "summer"){
+        dataID = "haley-summer-mttfss";
+    }
+    else if(props.formData.name === "haley" && props.formData.weekday === "wednesday" && props.formData.season === "summer"){
+        dataID = "haley-summer-wednesday";
+    }
+    else if(props.formData.name === "haley" && props.formData.weekday === "monday" && props.formData.season === "winter"){
+        dataID = "haley-winter-monday";
+    }
+    else if(props.formData.name === "haley" && props.formData.weekday === "tuesday" && props.formData.season === "winter"){
+        dataID = "haley-winter-tuesday";
+    }
+    else if(props.formData.name === "haley" && props.formData.weekday === "wednesday" && props.formData.season === "winter"){
+        dataID = "haley-winter-wednesday";
+    }
+    else if(props.formData.name === "haley" && (props.formData.weekday === "thursday" || props.formData.weekday === "friday" || props.formData.weekday === "saturday") && props.formData.season === "winter"){
+        dataID = "haley-winter-tfs";
+    }
+    else if(props.formData.name === "haley" && props.formData.weekday === "sunday"  && props.formData.season === "winter"){
+        dataID = "haley-winter-sunday";
+    }
+
+
+
+
+
 
     const sched = data.filter(item => item.id == dataID);
     console.log(sched);

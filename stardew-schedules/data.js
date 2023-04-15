@@ -472,8 +472,157 @@ export default [
         
     ]  
     },
+    {
+        id: "haley-rainy",
+        note: null,
+        schedule: [ ["10:30 AM" , "Wakes up and stands by her dresser in her bedroom."],
+        ["11:30 AM" ,"Moves to the vanity in her bedroom."], 
+        ["12:00 PM" ,"Leaves her room to go to the kitchen."], 
+        ["4:00 PM" ,"Returns to her room."],
+        ["7:00 PM" ,"Leaves her room and stands in the living room."],
+        ["10:00 PM" ,"Goes to bed."],
+        
+    ]  
+    },
+    {
+        id: "haley-spring-fall-monday",
+        note: null,
+        schedule: [ ["9:00 AM" , "In her room."],
+        ["10:00 AM" ,"Leaves her room to go to kitchen."], 
+        ["11:00 AM" ,"Leaving home to go to the river south of Marnie's Ranch."], 
+        ["12:20 PM" ,"By the river south of Marnie's Ranch, taking pictures."], 
+        ["4:30 PM" ,"Heads home."],
+        ["5:50 PM" ,"At home, cooking dinner."],
+        ["8:20 PM" ,"In her room."],
+        ["11:00 PM" ,"Goes to bed."],
+        
+    ]  
+    },
+    {
+        id: "haley-spring-ttfss",
+        note: null,
+        schedule: [ ["9:00 AM" , "In her room."],
+        ["11:00 AM" ,"Leaving home to go to the fountain."], 
+        ["12:20 PM" ,"By the fountain, left of Community Center."],  
+        ["4:30 PM" ,"Heads home."],
+        ["5:50 PM" ,"At home, cooking dinner."],
+        ["8:20 PM" ,"In her room."],
+        ["11:00 PM" ,"Goes to bed."],
+        
+    ]  
+    },
 
+    {
+        id: "haley-spring-wednesday",
+        note: null,
+        schedule: [ ["9:00 AM" , "In her room."],
+        ["12:10 PM" , "In the living room."],
+        ["12:30 PM" ,"Leaving home to go to the fountain."], 
+        ["4:30 PM" ,"Leaves fountain to go home."],
+        ["5:30 PM" ,"Arrives home."],
+        ["5:50 PM" ,"Stands in kitchen."],
+        ["8:20 PM" ,"In her room."],
+        ["11:00 PM" ,"Goes to bed."],
+        
+    ]  
+    },
+    {
+        id: "haley-summer-mttfss",
+        note: null,
+        schedule: [ ["9:00 AM" , "In her room."],
+        ["10:30 AM" ,"Leaving house to go to beach."], 
+        ["11:50 AM" ,"At the beach, upper left."], 
+        ["1:30 PM" ,"Goes to Alex's ice cream stand."], 
+        ["2:30 PM" ,"At Alex's ice cream stand, next to museum/library."],
+        ["5:00 PM" ,"Heads home."],
+        ["6:20 PM" ,"At home, cooking dinner."],
+        ["8:20 PM" ,"In her room."],
+        ["11:00 PM" ,"Goes to bed."],
+        
+    ]  
+    },
 
+    {
+        id: "haley-summer-wednesday",
+        note: null,
+        schedule: [ ["9:00 AM" , "In her room."],
+        ["12:10 PM" ,"In the living room."], 
+        ["4:40 APM" ,"In the kitchen."], 
+        ["8:20 PM" ,"In her room."],
+        ["10:30 PM" ,"Goes to bed."],
+        
+    ]  
+    },
+
+    {
+        id: "haley-winter-9",
+        note: "Winter 9th",
+        schedule: [ ["11:30 AM" , "Harvey's clinic."],
+        ["4:00 PM" ,"Walks home."], 
+     
+       
+    ]  
+    },
+    {
+        id: "haley-winter-16",
+        note: "Winter 9th",
+        schedule: [ ["10:30 AM" , "Wakes up and stands by her dresser in her bedroom."],
+        ["11:30 PM" ,"Moves to the vanity in her bedroom."], 
+        ["12:00 PM" ,"Leaves her room to go to the kitchen."], 
+        ["4:00 PM" ,"Attends the Night Market."],
+        ["12:00 AM" ,"Returns home."], 
+    ]  
+    },
+    {
+        id: "haley-winter-monday",
+        note: null,
+        schedule: [ ["10:30 AM" , "Get off bed."],
+        ["12:00 PM" ,"Goes to the kitchen."], 
+        ["1:00 PM" ,"In kitchen."],
+        ["7:00 PM" ,"Leaves room."], 
+    ]  
+    },
+    {
+        id: "haley-winter-tuesday",
+        note: null,
+        schedule: [ ["11:00 AM" , "In her room."],
+        ["12:00 PM" ,"Goes to the kitchen."], 
+        ["5:10 PM" ,"In kitchen."],
+        ["8:00 PM" ,"In living room."], 
+    ]  
+    },
+    {
+        id: "haley-winter-wednesday",
+        note: null,
+        schedule: [ ["10:00 AM" , "In her room."],
+        ["11:00 AM" ,"Leaving home to go to the fountain."], 
+        ["12:20 PM" ,"By the fountain, left of Community Center."],
+        ["4:30 PM" ,"Heads home"], 
+        ["5:50 PM" ,"At home, cooking dinner."], 
+        ["8:00 PM" ,"Returns to her room."],
+    ]
+    },
+
+        {
+            id: "haley-winter-tfs",
+            note: null,
+            schedule: [ ["10:30 AM" , "Gets up from bed."],
+            ["12:00 PM" ,"Leaves Room, goes to Kitchen."], 
+            ["4:00 PM" ,"Leaves Kitchen, goes to her room."],
+            ["7:00 PM" ,"Leaves Room, in Living Room."], 
+            ["10:00 PM" ,"Goes to Bed."],
+        ]
+        },
+        {
+            id: "haley-winter-sunday",
+            note: null,
+            schedule: [ ["12:00 PM" , "Moves from Bedroom to Kitchen."],
+            ["2:00 PM" ,"In kitchen."], 
+            ["5:00 PM" ,"In Her Bedroom."],
+            ["7:00 PM" ,"Leaves Room, in Living Room."], 
+            
+        ]
+        },
 
 
 

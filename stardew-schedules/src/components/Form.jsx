@@ -7,7 +7,6 @@ function Form() {
         {
             name: "abigail", 
             season: "spring", 
-            friendship: 1, 
             isRaining: false, 
             specialDay: "",
             railroadUnlocked: false,
@@ -71,27 +70,6 @@ function Form() {
     </select>
     <br />
 
-    <label htmlFor="friendship">Current Friendship level</label>
-    <select
-        id="friendship"
-        onChange={handleChange}
-        name="friendship"
-        value={formData.friendship}
-    >
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-
-    </select>
-
-<br/>
 <label htmlFor="isRaining">Is it raining?</label>
 <input 
                 type="checkbox" 
