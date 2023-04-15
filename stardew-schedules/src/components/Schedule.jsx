@@ -168,6 +168,21 @@ function Schedule(props) {
     else if(props.formData.name === "haley" && props.formData.weekday === "sunday"  && props.formData.season === "winter"){
         dataID = "haley-winter-sunday";
     }
+    else if(props.formData.name === "leah" && props.formData.season === "spring" && props.formData.specialDay === "16"){
+        dataID = "leah-spring-16";
+    }
+    else if(props.formData.name === "leah" && props.formData.isRaining){
+        dataID = "leah-rainy-weekday";
+    }
+    else if(props.formData.name === "haley" && props.formData.weekday === "monday"){
+        dataID = "leah-monday";
+    }
+    else if(props.formData.name === "leah" && props.formData.season === "winter" && props.formData.specialDay === "15"){
+        dataID = "leah-winter-15";
+    }
+    else if(props.formData.name === "leah" ){
+        dataID = "leah-rainy-weekday";
+    }
 
 
 

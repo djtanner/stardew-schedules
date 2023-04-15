@@ -624,6 +624,52 @@ export default [
         ]
         },
 
+        {
+            id: "leah-spring-16",
+            note: null,
+            schedule: [ ["9:00 AM" , "Sculpts in her cottage."],
+            ["10:30 AM" ,"Goes to the waiting room of Harvey's Clinic."], 
+            ["1:30 PM" ,"Moves from the waiting room to the left exam room in the Clinic."],
+            ["4:00 PM" ,"Leaves the Clinic and walks to The Stardrop Saloon."], 
+            ["11:40 PM" ,"Leaves the Saloon to return home and sleep."], 
+            
+        ]
+        },
+
+        {
+            id: "leah-rainy-weekday",
+            note: null,
+            schedule: [ ["9:00 AM" , "Sculpts in her cottage."],
+            ["12:00 PM" , "Moves to her easel to paint."], 
+            ["2:00 PM" ,"Stands in front of the bookcase in her cottage."],
+            ["4:00 PM" ,"Leaves her cottage and walks to The Stardrop Saloon."], 
+            ["11:40 PM" ,"Leaves the Saloon to return home and sleep."], 
+            
+        ]
+        },
+        {
+            id: "leah-monday",
+            note: null,
+            schedule: [ ["9:00 AM" , "Sculpts in her cottage."],
+            ["11:00 AM" , "Goes to shop at Pierre's General Store."], 
+            ["5:00 PM" ,"Leaves the store to return home and stand in front of her bookcase."],
+            ["10:00 PM" ,"Stands at the table in her house."], 
+            ["12:00 AM" ,"Goes to bed for the night."], 
+            
+        ]
+        },
+        {
+            id: "leah-winter-15",
+            note: null,
+            schedule: [ ["9:00 AM" , "Sculpts in her cottage."],
+            ["12:00 PM" , "Moves to her easel to paint."], 
+            ["2:00 PM" ,"Stands in front of the bookcase in her cottage."],
+            ["4:00 PM" ,"Leaves her cottage to attend the Night Market."], 
+            ["11:40 PM" ,"Leaves the Night Market to return home and sleep."], 
+            
+        ]
+        },
+
 
 
 
