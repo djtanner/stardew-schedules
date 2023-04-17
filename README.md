@@ -1,7 +1,15 @@
-# stardew-schedules<img width="1252" alt="Screen Shot 2023-04-15 at 10 58 15 AM" src="https://user-images.githubusercontent.com/3960256/232196230-b2888756-85ba-42e5-9a3f-eb72fcc44125.png">
+# Stardew Schedules 🌱🕰️
 
-This is a react app for finding locations of Stardew Valley NPCs based on form inputs using data from the SDV wiki (https://stardewvalleywiki.com/)
+![Stardew Schedules Screenshot](https://user-images.githubusercontent.com/3960256/232196230-b2888756-85ba-42e5-9a3f-eb72fcc44125.png)
 
-There are two components, the form and the schedule. Updating fields in the form after the first render will automatically update the schedule.
+A React app to help you find the locations of Stardew Valley NPCs based on form inputs, using data from the [SDV Wiki](https://stardewvalleywiki.com/).
 
-The schedules are currently only for Marriage candidate Villagers. The entire villager list is available, and the app could be updated in the future with more villagers. https://stardewvalleywiki.com/Villagers
+## Features
+
+- Two main components: **Form** and **Schedule**
+- Updating fields in the form after the first render will automatically update the schedule
+- Schedules are available only for [Marriage Candidate Villagers](https://stardewvalleywiki.com/Villagers)
+
+## Future Improvements
+
+- Expand schedules to include the entire list of villagers
