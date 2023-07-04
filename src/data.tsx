@@ -1,4 +1,10 @@
-export default [
+type Schedule = {
+    readonly id: string,
+    note?: string | null,
+    schedule: string[][]
+}
+
+const data: Schedule[] = [
     {
         id: "alex-rainy",
         note: null,
@@ -1113,10 +1119,6 @@ export default [
                 ]          
         },
 
-
-
-
-
-
-
 ]
+
+export default data;
