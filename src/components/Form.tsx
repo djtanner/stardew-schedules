@@ -1,33 +1,50 @@
 import React from 'react'
-import Schedule from './Schedule'
+import Schedule from './Schedule.tsx'
 
 function Form() {
     const [showSchedule, setShowSchedule] = React.useState(false);
-    const [formData, setFormData] = React.useState(
-        {
-            name: "abigail", 
-            season: "spring", 
-            isRaining: false, 
-            specialDay: "",
-            railroadUnlocked: false,
-            communityRestored: false,
-            weekday: ""
-        }
-    )
 
-    function handleChange(event) {
-        const {name, value, type, checked} = event.target
-        setFormData(prevFormData => {
-            return {
-                ...prevFormData,
-                [name]: type === "checkbox" ? checked : value,
-                
-            }
-        })
-        console.log(formData)
+    interface FormData {
+        name: string,
+        season: string,
+        isRaining: boolean,
+        specialDay?: string,
+        railroadUnlocked: boolean,
+        communityRestored: boolean,
+        weekday?: string
     }
 
-    function handleSubmit(event) {
+
+    const initialFormData: FormData = {
+        name: "abigail", 
+        season: "spring", 
+        isRaining: false, 
+        specialDay: "",
+        railroadUnlocked: false,
+        communityRestored: false,
+        weekday: ""
+    }
+
+
+    const [formData, setFormData] = React.useState<FormData>(initialFormData)
+    
+    const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        const { name, value, type, checked } = event.target;
+        setFormData((prevFormData) => ({
+          ...prevFormData,
+          [name]: type === 'checkbox' ? checked : value,
+        }));
+      };
+    
+      const handleSelectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+        const { name, value } = event.target;
+        setFormData((prevFormData) => ({
+          ...prevFormData,
+          [name]: value,
+        }));
+      };
+
+    function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
         event.preventDefault()
     
         console.log(formData)
@@ -42,7 +59,7 @@ function Form() {
     <label htmlFor="name">NPC Name</label>
     <select
         id="name"
-        onChange={handleChange}
+        onChange={handleSelectChange}
         name="name"
         value={formData.name}
     >
@@ -62,7 +79,7 @@ function Form() {
     <label htmlFor="season">Season</label>
     <select
         id="season"
-        onChange={handleChange}
+        onChange={handleSelectChange}
         name="season"
         value={formData.season}
     >
@@ -79,7 +96,7 @@ function Form() {
                 type="checkbox" 
                 id="isRaining" 
                 checked={formData.isRaining}
-                onChange={handleChange}
+                onChange={handleInputChange}
                 name="isRaining"
             />
 
@@ -91,7 +108,7 @@ function Form() {
                     name="specialDay"
                     value="4"
                     checked={formData.specialDay === "4"}
-                    onChange={handleChange}
+                    onChange={handleInputChange}
                 />
                 <label htmlFor="4">4th</label>
                 <br />
@@ -101,7 +118,7 @@ function Form() {
                     name="specialDay"
                     value="6"
                     checked={formData.specialDay === "6"}
-                    onChange={handleChange}
+                    onChange={handleInputChange}
                 />
                 <label htmlFor="6">6th</label>
                 <br />
@@ -111,7 +128,7 @@ function Form() {
                     name="specialDay"
                     value="9"
                     checked={formData.specialDay === "9"}
-                    onChange={handleChange}
+                    onChange={handleInputChange}
                 />
                 <label htmlFor="9">9th</label>
                 <br />
@@ -121,7 +138,7 @@ function Form() {
                     name="specialDay"
                     value="11"
                     checked={formData.specialDay === "11"}
-                    onChange={handleChange}
+                    onChange={handleInputChange}
                 />
                 <label htmlFor="11">11th</label>
                 <br />
@@ -132,7 +149,7 @@ function Form() {
                     name="specialDay"
                     value="15"
                     checked={formData.specialDay === "15"}
-                    onChange={handleChange}
+                    onChange={handleInputChange}
                 />
                 <label htmlFor="15">15th</label>
                 <br />
@@ -142,7 +159,7 @@ function Form() {
                     name="specialDay"
                     value="16"
                     checked={formData.specialDay === "16"}
-                    onChange={handleChange}
+                    onChange={handleInputChange}
                 />
                 <label htmlFor="16">16th</label>
                 <br />
@@ -152,7 +169,7 @@ function Form() {
                     name="specialDay"
                     value="17"
                     checked={formData.specialDay === "17"}
-                    onChange={handleChange}
+                    onChange={handleInputChange}
                 />
                 <label htmlFor="17">17th</label>
                
@@ -163,7 +180,7 @@ function Form() {
                     name="specialDay"
                     value="23"
                     checked={formData.specialDay === "23"}
-                    onChange={handleChange}
+                    onChange={handleInputChange}
                 />
                 <label htmlFor="23">23rd</label>
                 <br />
@@ -174,7 +191,7 @@ function Form() {
                     name="specialDay"
                     value="25"
                     checked={formData.specialDay === "25"}
-                    onChange={handleChange}
+                    onChange={handleInputChange}
                 />
                 <label htmlFor="25">25th</label>
                 <br />
@@ -186,7 +203,7 @@ function Form() {
                 type="checkbox" 
                 id="railroadUnlocked" 
                 checked={formData.railroadUnlocked}
-                onChange={handleChange}
+                onChange={handleInputChange}
                 name="railroadUnlocked"
             />
 <br/>
@@ -196,7 +213,7 @@ function Form() {
                 type="checkbox" 
                 id="communityRestored" 
                 checked={formData.communityRestored}
-                onChange={handleChange}
+                onChange={handleInputChange}
                 name="communityRestored"
             />
 <br/>
@@ -204,7 +221,7 @@ function Form() {
 <label htmlFor="weekday">Weekday</label>
     <select
         id="weekday"
-        onChange={handleChange}
+        onChange={handleSelectChange}
         name="weekday"
         value={formData.weekday}
     >

@@ -1,9 +1,23 @@
 import React from 'react'
-import data from '../../data';
+import data from '../data.tsx';
 
-function Schedule(props) {
+interface FormData {
+    name: string,
+    season: string,
+    isRaining: boolean,
+    specialDay?: string,
+    railroadUnlocked: boolean,
+    communityRestored: boolean,
+    weekday?: string
+}
 
-    let dataID;
+interface FormComponentProps {
+    formData: FormData
+  }
+
+function Schedule(props: FormComponentProps) {
+
+    let dataID:string;
 
     if(props.formData.name === "alex" && props.formData.isRaining){
         dataID = "alex-rainy";
@@ -77,16 +91,16 @@ function Schedule(props) {
     else if(props.formData.name === "elliott" && (props.formData.weekday === "thursday" || props.formData.weekday === "friday")){
         dataID = "elliott-tf"
     }
-    else if(props.formData.name === "elliott" && props.formData.season === "spring" && (props.formData.weekday !== "thursday" || props.formData.weekday !== "friday")){
+    else if(props.formData.name === "elliott" && props.formData.season === "spring" && (props.formData.weekday !== "thursday" && props.formData.weekday !== "friday")){
         dataID = "elliott-weekday-spring"
     }
-    else if(props.formData.name === "elliott" && props.formData.season === "summer" && (props.formData.weekday !== "thursday" || props.formData.weekday !== "friday")){
+    else if(props.formData.name === "elliott" && props.formData.season === "summer" && (props.formData.weekday !== "thursday" && props.formData.weekday !== "friday")){
         dataID = "elliott-weekday-summer"
     }
-    else if(props.formData.name === "elliott" && props.formData.season === "fall" && (props.formData.weekday !== "thursday" || props.formData.weekday !== "friday")){
+    else if(props.formData.name === "elliott" && props.formData.season === "fall" && (props.formData.weekday !== "thursday" && props.formData.weekday !== "friday")){
         dataID = "elliott-weekday-fall"
     }
-    else if(props.formData.name === "elliott" && props.formData.season === "winter" && (props.formData.weekday !== "thursday" || props.formData.weekday !== "friday")){
+    else if(props.formData.name === "elliott" && props.formData.season === "winter" && (props.formData.weekday !== "thursday" && props.formData.weekday !== "friday")){
         dataID = "elliott-weekday-winter"
     }
     else if(props.formData.name === "emily" && props.formData.isRaining){
